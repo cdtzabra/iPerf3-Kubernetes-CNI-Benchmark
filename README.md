@@ -1,4 +1,4 @@
-# cni-benchmark-iperf3
+# Kubernetes CNI Benchmark With iPerf3
 
 
 To compare the network performance between Calico and Cilium in your Kubernetes cluster, you can follow these steps:
