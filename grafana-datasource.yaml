@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: influx-grafana-datasource
+  labels:
+     grafana_datasource: "1"
+data:
+  influxdb-iperf.yaml: |-
+    apiVersion: 1
+    datasources:
+      - name: influxdb
+        type: influxdb
+        database: iperf
+        url: http://influxdb.skone-cni-benchmark.svc:8086
+        # skone-cni-benchmark is the NAMESPACE where influxdb is deployed
+        access: proxy
+        jsonData:
+          timeInterval: "15s"
