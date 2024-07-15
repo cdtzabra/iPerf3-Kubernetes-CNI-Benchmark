@@ -11,8 +11,8 @@ data:
       - name: influxdb
         type: influxdb
         database: iperf
-        url: http://influxdb.skone-cni-benchmark.svc:8086
-        # skone-cni-benchmark is the NAMESPACE where influxdb is deployed
+        url: http://influxdb.YOUR_NAMESPACE.svc:8086
+        # change YOUR_NAMESPACE with the right value
         access: proxy
         jsonData:
           timeInterval: "15s"
