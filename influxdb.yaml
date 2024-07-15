@@ -26,8 +26,8 @@ spec:
       labels:
         app: influxdb
     spec:
-      nodeSelector:
-        role: infra-node
+      #nodeSelector:
+      #  role: infra-node
       tolerations:
       - effect: NoSchedule
         key: node-role.kubernetes.io/infra
